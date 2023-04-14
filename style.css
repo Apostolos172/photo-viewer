@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+html body div#demo {
+  height: 100%;
+}
+html body div#demo button.carousel-control-next,
+html body div#demo button.carousel-control-prev {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+html body div#demo .carousel-indicators [data-bs-target] {
+  height: 5px;
+}
+html body div#demo .carousel-indicators .active {
+  background-color: yellowgreen;
+}
+html body div#demo div.carousel-inner {
+  height: 100%;
+  background-color: black;
+}
+html body div#demo div.carousel-inner div.carousel-item {
+  height: 100%;
+}
+html body div#demo div.carousel-inner div.carousel-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html body div#demo div.carousel-inner div.carousel-caption * {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+  overflow: auto;
+}
+html body div#demo div.carousel-inner img {
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  html body div#demo div.carousel-inner {
+    background-color: black;
+  }
+  html body div#demo div.carousel-inner div.carousel-item {
+    transition-delay: 0s;
+    transition-duration: 0s;
+    display: none;
+  }
+  html body div#demo div.carousel-inner div.carousel-item.active {
+    display: flex;
+  }
+  html body div#demo div.carousel-inner div.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body div#demo div.carousel-inner div.carousel-caption * {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: rgba(232, 232, 232, 0.3);
+    padding: 9px;
+    margin: auto;
+    overflow: auto;
+    max-width: 250px;
+    margin-top: 5px;
+  }
+  html body div#demo div.carousel-inner div.carousel-item img {
+    height: 100%;
+    width: auto;
+  }
+  html body div#demo div.carousel-inner div.carousel-item.active img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
