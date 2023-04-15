@@ -76,7 +76,7 @@ console.log(split[0]);
 
 document.addEventListener("DOMContentLoaded", () => {
   //console.log(passedArray);
-  //contentData = passedArray;
+  contentData = passedArray;
   console.log(contentData);
 
   let nameOfCarousel = "demo";
